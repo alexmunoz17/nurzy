@@ -1,0 +1,47 @@
+.navbar-sidebar {
+    transition: width 0.5s;
+}
+
+.heading-sidebar {
+    color: #9333ea;
+}
+
+.icon-collapse {
+    cursor: pointer;
+}
+
+.collapsed {
+    justify-content: center;
+}
+
+.icon-profile {
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #a144f3, #bc62f7);
+}
+
+.btn-sidebar {
+    margin-bottom: 0.5rem;
+    border-radius: 0.75rem !important;
+    text-align: left !important;
+    font-size: larger !important;
+}
+
+.btn-sidebar:hover {
+    background-color: #f1f5f9 !important;
+}
+
+.btn-sidebar-active {
+    background: linear-gradient(to right, #A864BE, #836bc8);
+    color: white !important;
+}
+
+.btn-logout:hover {
+    background-color: #FFE2E5 !important;
+}
