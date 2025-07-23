@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import './Sidebar.css'
 
-function Dashboard() {
+function Jobs() {
     const [pageIsLoaded, setPageIsLoaded] = useState(false);
 
     useEffect(() => {
@@ -19,8 +19,8 @@ function Dashboard() {
 
     return (
         <>
-            <div className="flex-grow-1 p-3 bg-light vh-100" style={ animationStyle }>
-                <h2>Dashboard</h2>
+            <div className={"flex-grow-1 p-3 bg-light"} style={ animationStyle }>
+                <h2>Jobs</h2>
                 <div className="flex-row w-100">
                     <div className="row mb-4">
                         <div className="col-sm-12 mb-3 mb-sm-0">
@@ -52,4 +52,4 @@ function Dashboard() {
     )
 }
 
-export default Dashboard
+export default Jobs

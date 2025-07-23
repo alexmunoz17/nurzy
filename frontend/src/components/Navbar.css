@@ -1,0 +1,18 @@
+.heading-sidebar {
+    color: #9333ea;
+}
+
+.btn-navbar {
+    border-radius: 0.75rem !important;
+    font-size: large !important;
+}
+
+.btn-sidebar-active {
+    background: linear-gradient(to right, #A864BE, #836bc8);
+    color: white !important;
+}
+
+.btn-navbar-logout {
+    background-color: #FFE2E5 !important;
+    color: red !important;
+}

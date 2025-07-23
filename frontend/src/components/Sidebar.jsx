@@ -2,9 +2,8 @@ import { useState } from 'react';
 
 import './Sidebar.css'
 
-function Sidebar() {
+function Sidebar({ selectedPage, onSelectPage }) {
     const [collapsedSidebar, setCollapsedSidebar] = useState(false);
-    const [sidebarButtonIsActive, setSidebarButtonIsActive] = useState("dashboard");
 
     const toggleSidebar = () => {
         setCollapsedSidebar(!collapsedSidebar);
@@ -12,7 +11,7 @@ function Sidebar() {
 
     return (
         <>
-            <div className="p-3 vh-100 d-flex flex-column navbar-sidebar"
+            <div className="p-3 vh-100 d-flex flex-column navbar-sidebar d-none d-md-flex"
                  style={{ width: collapsedSidebar ? "5rem" : "16rem" }}>
                 <div className="d-flex align-items-center">
                     <h4 className="mb-0 heading-sidebar">{collapsedSidebar ? "N" : "Nurzy"}</h4>
@@ -30,26 +29,26 @@ function Sidebar() {
                 <hr/>
                 <button className={`btn btn-sidebar p-2
                                     ${collapsedSidebar ? "collapsed d-flex" : ""}
-                                    ${sidebarButtonIsActive === "dashboard" ? "btn-sidebar-active" : ""}`}
-                        onClick={() => setSidebarButtonIsActive("dashboard")}>
+                                    ${selectedPage === "dashboard" ? "btn-sidebar-active" : ""}`}
+                        onClick={() => onSelectPage("dashboard")}>
                     <i className="bi bi-bar-chart"></i> {collapsedSidebar ? null : "Dashboard"}
                 </button>
                 <button className={`btn btn-sidebar p-2
                                     ${collapsedSidebar ? "collapsed d-flex" : ""}
-                                    ${sidebarButtonIsActive === "jobs" ? "btn-sidebar-active" : ""}`}
-                        onClick={() => setSidebarButtonIsActive("jobs")}>
+                                    ${selectedPage === "jobs" ? "btn-sidebar-active" : ""}`}
+                        onClick={() => onSelectPage("jobs")}>
                     <i className="bi bi-briefcase"></i> {collapsedSidebar ? null : "Jobs"}
                 </button>
                 <button className={`btn btn-sidebar p-2
                                     ${collapsedSidebar ? "collapsed d-flex" : ""}
-                                    ${sidebarButtonIsActive === "caredits" ? "btn-sidebar-active" : ""}`}
-                        onClick={() => setSidebarButtonIsActive("caredits")}>
+                                    ${selectedPage === "caredits" ? "btn-sidebar-active" : ""}`}
+                        onClick={() => onSelectPage("caredits")}>
                     <i className="bi bi-award"></i> {collapsedSidebar ? null : "Caredits"}
                 </button>
                 <button className={`btn btn-sidebar p-2
                                     ${collapsedSidebar ? "collapsed d-flex" : ""}
-                                    ${sidebarButtonIsActive === "profile" ? "btn-sidebar-active" : ""}`}
-                        onClick={() => setSidebarButtonIsActive("profile")}>
+                                    ${selectedPage === "profile" ? "btn-sidebar-active" : ""}`}
+                        onClick={() => onSelectPage("profile")}>
                     <i className="bi bi-person"></i> {collapsedSidebar ? null : "Profile"}
                 </button>
                 <div className="d-flex flex-column mt-auto">
