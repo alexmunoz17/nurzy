@@ -54,14 +54,17 @@ function Sidebar() {
                 </button>
                 <div className="d-flex flex-column mt-auto">
                     <hr/>
-                    <button className="btn btn-primary p-2">
-                        Upgrade to Premium
+                    <button className={`btn btn-sidebar p-2 mt-2
+                                        ${collapsedSidebar ? "collapsed d-flex" : ""}`}>
+                        <i className="bi bi-chevron-double-up"></i> {collapsedSidebar ? null : "Upgrade to Premium"}
                     </button>
-                    <button className="btn btn-primary p-2 mt-2">
-                        Contact support
+                    <button className={`btn btn-sidebar p-2 mt-2
+                                        ${collapsedSidebar ? "collapsed d-flex" : ""}`}>
+                        <i className="bi bi-question-circle"></i> {collapsedSidebar ? null : "Contact support"}
                     </button>
-                    <button className="btn btn-logout p-2 mt-2">
-                        Log out
+                    <button className={`btn btn-sidebar btn-logout p-2 mt-2
+                                        ${collapsedSidebar ? "collapsed d-flex" : ""}`}>
+                        <i className="bi bi-box-arrow-right"></i> {collapsedSidebar ? null : "Log out"}
                     </button>
                 </div>
             </div>
