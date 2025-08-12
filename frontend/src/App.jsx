@@ -1,27 +1,18 @@
-import Navbar from "./components/Navbar.jsx";
-import Sidebar from "./components/Sidebar.jsx";
-import Dashboard from "./components/Dashboard.jsx";
-import Jobs from "./components/Jobs.jsx";
-import {useState} from "react";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Sidebar from "./components/Sidebar/Sidebar.jsx";
+import AppRoutes from "./routes/AppRoutes.jsx";
+
 
 function App() {
-
-    const [selectedPage, setSelectedPage] = useState("dashboard");
-
-    const onSelectPage = (page) => {
-        setSelectedPage(page);
-    };
-
     return (
         <>
-            <Navbar selectedPage={selectedPage} onSelectPage={onSelectPage}/>
+            <Navbar/>
             <div className="d-flex flex-row">
-                <Sidebar selectedPage={selectedPage} onSelectPage={onSelectPage} />
-                {selectedPage === "dashboard" ? (<Dashboard />) : null}
-                {selectedPage === "jobs" ? (<Jobs />) : null}
+                <Sidebar/>
+                <AppRoutes/>
             </div>
         </>
-    )
+    );
 }
 
 export default App

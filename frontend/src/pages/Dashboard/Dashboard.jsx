@@ -19,7 +19,7 @@ function Dashboard() {
 
     return (
         <>
-            <div className="flex-grow-1 p-3 ps-5 pe-5 bg-light vh-100" style={ animationStyle }>
+            <div className="flex-grow-1 p-3 bg-light mh-100" style={ animationStyle }>
                 <h2>Dashboard</h2>
                 <div className="flex-row w-100">
                     <div className="row mb-4">
@@ -43,7 +43,7 @@ function Dashboard() {
                             </div>
                         </div>
                         <div className="col-sm-3 mb-3 mb-sm-0">
-                        <div className="card nurzy-card">
+                            <div className="card nurzy-card">
                                 <div className="card-body">
                                     <h5 className="card-title">Special title treatment</h5>
                                     <p className="card-text">With supporting text below as a natural lead-in to

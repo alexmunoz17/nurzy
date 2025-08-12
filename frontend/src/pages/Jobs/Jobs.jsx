@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import './Sidebar.css'
+import '../../components/Sidebar/Sidebar.css'
 
 function Jobs() {
     const [pageIsLoaded, setPageIsLoaded] = useState(false);
@@ -19,7 +19,7 @@ function Jobs() {
 
     return (
         <>
-            <div className={"flex-grow-1 p-3 bg-light"} style={ animationStyle }>
+            <div className="flex-grow-1 p-3 bg-light mh-100" style={ animationStyle }>
                 <h2>Jobs</h2>
                 <div className="flex-row w-100">
                     <div className="row mb-4">

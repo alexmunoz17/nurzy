@@ -1,13 +1,18 @@
-.heading-sidebar {
+.heading-navbar {
     color: #9333ea;
 }
 
 .btn-navbar {
     border-radius: 0.75rem !important;
     font-size: large !important;
+    text-align: left !important;
 }
 
-.btn-sidebar-active {
+.btn-navbar:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.btn-navbar-active {
     background: linear-gradient(to right, #A864BE, #836bc8);
     color: white !important;
 }
