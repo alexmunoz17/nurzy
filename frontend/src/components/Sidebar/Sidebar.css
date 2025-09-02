@@ -1,5 +1,8 @@
 .navbar-sidebar {
     transition: width 0.5s;
+    background-color: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.06);
+    z-index: 1;
 }
 
 .heading-sidebar {
