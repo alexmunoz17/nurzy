@@ -12,7 +12,7 @@ function Sidebar() {
     };
 
     return (
-        <div className="p-3 vh-100 d-flex flex-column navbar-sidebar d-none d-md-flex"
+        <div className="p-3 vh-100 d-flex flex-column navbar-sidebar d-none d-md-flex flex-shrink-0"
              style={{ width: collapsedSidebar ? "5rem" : "16rem" }}>
             <div className="d-flex align-items-center">
                 <h4 className="mb-0 heading-sidebar">{collapsedSidebar ? "N" : "Nurzy"}</h4>

@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 
-import '../../components/Sidebar/Sidebar.css'
-
 function Jobs() {
     const [pageIsLoaded, setPageIsLoaded] = useState(false);
 
