@@ -1,4 +1,4 @@
-.navbar-sidebar {
+.sidebar {
     transition: width 0.5s;
     background-color: #fff;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.06);
@@ -28,14 +28,13 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    background: linear-gradient(135deg, #a144f3, #bc62f7);
+    background: linear-gradient(to right, #A855F7, #9333EA);
 }
 
 .btn-sidebar {
     margin-bottom: 0.5rem;
     border-radius: 1rem !important;
     text-align: left !important;
-    font-weight: 500 !important;
     font-size: 1rem !important;
 }
 
@@ -46,8 +45,23 @@
 .btn-sidebar-active {
     background: linear-gradient(to right, #A855F7, #9333EA);
     color: white !important;
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.25);
 }
 
 .btn-logout:hover {
     background-color: #FFE2E5 !important;
+}
+
+/* Ensure the flex child can shrink and allow scrolling in the middle section */
+.min-h-0 {
+    min-height: 0;
+}
+
+/* Hide scrollbars (while keeping scroll) in the buttons area */
+.hide-scrollbar {
+    -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: none;    /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;            /* Safari and Chrome */
 }
