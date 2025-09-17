@@ -1,9 +1,9 @@
 import { Routes, Route, Outlet } from 'react-router-dom';
-import Home from '../pages/Home/Home';
-import Dashboard from '../pages/Dashboard/Dashboard';
-import Jobs from '../pages/Jobs/Jobs';
-import NotFound from '../pages/NotFound/NotFound';
-import Sidebar from '../components/Sidebar/Sidebar';
+import Home from '../pages/Home/Home.jsx';
+import Dashboard from '../pages/Dashboard/Dashboard.jsx';
+import Jobs from '../pages/Jobs/Jobs.jsx';
+import NotFound from '../pages/NotFound/NotFound.jsx';
+import Sidebar from '../components/Sidebar/Sidebar.jsx';
 
 function SidebarLayout() {
     return (
