@@ -1,0 +1,12 @@
+.div-header {
+    background: linear-gradient(
+            135deg,
+            #3982DF 0%,
+            #6eb6f0 25%,   /* light sky blue */
+            #8fa6f5 35%,  /* soft lavender blue */
+            #b389f4 50%,  /* purple */
+            #d48ce7 70%,  /* pinkish violet */
+            #f3a6c9 85%,  /* soft pink */
+            #f6c0b8 100%  /* peachy pink */
+    );
+}
