@@ -10,3 +10,25 @@
             #f6c0b8 100%  /* peachy pink */
     );
 }
+
+.div-navbar {
+    border: 1px solid #fff3;
+    border-radius: 1.5rem;
+    backdrop-filter: blur(16px);
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+.img-hero {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 80vh;
+}
+
+.title-hero {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
